@@ -22,6 +22,10 @@ pub enum GhostfulError {
 
     #[error(transparent)]
     Json(#[from] serde_json::Error),
+    #[error("page crashed")]
+    PageCrashed,
+    #[error("browser process crashed")]
+    BrowserCrashed,
 }
 
 pub type Result<T> = std::result::Result<T, GhostfulError>;
