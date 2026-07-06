@@ -1,8 +1,9 @@
-mod error;
-mod page;
-mod element;
-mod config;
 mod browser;
+mod config;
+mod element;
+mod error;
+mod frame;
 mod input;
-mod protocol;
 mod network;
+mod page;
+mod protocol;
